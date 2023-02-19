@@ -1,0 +1,57 @@
+.services-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.services-title{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.services-title-heading h1{
+    font-family: var(--font-family);
+    background: var(--gradient-text);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.services-body{
+    height:  426.31px;
+    margin: 0rem 1.5rem;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.services-body-card{
+    height: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: column;
+    
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    margin: 20px;
+
+    color: rgba(41, 33, 33, 0.79);
+
+    background: linear-gradient(128.78deg, rgba(111, 134, 255, 0.47) 13.65%, rgba(78, 100, 215, 0) 92%, #571A6D 92%, #6F8BD4 92%);
+    box-shadow: 0px 4px 30px -1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 0px 0px 50px 0px;
+    }
+.services-body-card-heading h2{
+    padding: 4rem 1rem;
+}

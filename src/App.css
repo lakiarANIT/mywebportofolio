@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background: var(--bg-color);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.background-gradient{
+    /* ff 3.6+ */
+    background:-moz-linear-gradient(90deg, rgba(203, 218, 255, 1) 0%, rgba(94, 122, 193, 1) 100%); 
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(90deg, rgba(203, 218, 255, 1) 0%, rgba(94, 122, 193, 1) 100%);
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+    /* opera 11.10+ */
+    background:-o-linear-gradient(90deg, rgba(203, 218, 255, 1) 0%, rgba(94, 122, 193, 1) 100%);
 
-.App-link {
-  color: #61dafb;
-}
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5E7AC1', endColorstr='#CBDAFF', GradientType=0 );
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    /* ie 10+ */
+    background:-ms-linear-gradient(90deg, rgba(203, 218, 255, 1) 0%, rgba(94, 122, 193, 1) 100%);
+
+    /* global 94%+ browsers support */
+    background:linear-gradient(90deg, #cbdaff 0%, #5e7ac1 100%);
+
+    border-radius: 0px 0px 30px 30px;
+}
+.gradient-text{
+     /* ff 3.6+ */
+     background:-moz-linear-gradient(111deg, rgba(94, 122, 193, 1) 0%, rgba(203, 218, 255, 1) 100%); 
+
+     /* safari 5.1+,chrome 10+ */
+     background:-webkit-linear-gradient(111deg, rgba(94, 122, 193, 1) 0%, rgba(203, 218, 255, 1) 100%);
+ 
+     /* opera 11.10+ */
+     background:-o-linear-gradient(111deg, rgba(94, 122, 193, 1) 0%, rgba(203, 218, 255, 1) 100%);
+ 
+     /* ie 6-9 */
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CBDAFF', endColorstr='#5E7AC1', GradientType=0 );
+ 
+     /* ie 10+ */
+     background:-ms-linear-gradient(111deg, rgba(94, 122, 193, 1) 0%, rgba(203, 218, 255, 1) 100%);
+ 
+     /* global 94%+ browsers support */
+     background:linear-gradient(111deg, rgba(94, 122, 193, 1) 0%, rgba(203, 218, 255, 1) 100%);
+}
+.aboutme{
+    display: flex;
+    margin: 4rem 6rem;
+    background: var(--aboutme-gradient);
+    border-radius: 20px;
+    box-shadow: var(--about-border-shadow);
+}
+.services{
+    margin: 4rem 6rem;
+    background: var(--services-gradient);
+    border-radius: 20px;
 }
